@@ -1,266 +1,250 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="it">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pari Davide – Impianti Elettrici</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0d1b2a;
+      color: #fff;
+    }
+
+    header {
+      background-color: #102542;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00b4d8;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1200&q=60') center/cover no-repeat;
+      text-align: center;
+      padding: 160px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .hero a {
+      padding: 12px 25px;
+      background-color: #00b4d8;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #00b4d8;
+      margin-bottom: 30px;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .service {
+      background-color: #1b263b;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .service img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    button {
+      background-color: #00b4d8;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #102542;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    /* Pulsante WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        background: #1b263b;
+        padding: 15px;
+        border-radius: 8px;
+      }
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="it"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Pari Davide – Impianti Elettrici&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Montserrat', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #0d1b2a;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #102542;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 15px 40px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>position: sticky;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>top: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>z-index: 1000;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>header img {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height: 60px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav ul {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>list-style: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap: 25px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav a {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transition: color 0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #00b4d8;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&amp;fit=crop&amp;w=1200&amp;q=60') center/cover no-repeat;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 160px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero h1 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 2.5em;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero p {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.2em;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero a {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 12px 25px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #00b4d8;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>section {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 60px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 1100px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: auto;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>section h2 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #00b4d8;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.services {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap: 25px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.service {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #1b263b;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 300px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.service img {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 6px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>form {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 500px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>input, textarea {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: inherit;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>button {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #00b4d8;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #102542;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 30px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.9em;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #ccc;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* Pulsante WhatsApp */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.whatsapp-float {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>position: fixed;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>right: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #25D366;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 60px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height: 60px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 2px 10px rgba(0,0,0,0.3);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>z-index: 1000;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 768px) {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>nav ul {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>gap: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>background: #1b263b;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>padding: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.services {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;img src="logo-pari-davide.png" alt="Pari Davide Impianti Elettrici"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#chi-siamo"&gt;Chi siamo&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#servizi"&gt;Servizi&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#realizzazioni"&gt;Realizzazioni&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#preventivo"&gt;Preventivo&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#contatti"&gt;Contatti&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="hero" id="home"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Soluzioni Energetiche Innovative&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Impianti elettrici e fotovoltaici di qualità per privati e aziende&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#preventivo"&gt;Richiedi un preventivo&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="chi-siamo"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Chi Siamo&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Siamo un'azienda specializzata nella progettazione e installazione di impianti elettrici e fotovoltaici.<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">       </span>L’esperienza e la professionalità di Pari Davide garantiscono soluzioni sicure, efficienti e all’avanguardia per ogni esigenza energetica.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="servizi"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;I Nostri Servizi&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="services"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="service"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&amp;fit=crop&amp;w=800&amp;q=60" alt="Impianti elettrici"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Impianti Elettrici Civili e Industriali&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Realizziamo impianti su misura per abitazioni, aziende e strutture industriali.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="service"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&amp;fit=crop&amp;w=800&amp;q=60" alt="Fotovoltaico"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Impianti Fotovoltaici&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Soluzioni sostenibili per la produzione di energia pulita, riducendo i costi e l’impatto ambientale.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="service"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&amp;fit=crop&amp;w=800&amp;q=60" alt="Manutenzione"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Manutenzione e Assistenza&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Servizio di manutenzione costante per mantenere alta l’efficienza e la sicurezza degli impianti.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="preventivo"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Richiedi un Preventivo&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;form action="mailto:paridavideimpianti@yahoo.it" method="post" enctype="text/plain"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="text" name="nome" placeholder="Il tuo nome" required&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="email" name="email" placeholder="La tua email" required&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="tel" name="telefono" placeholder="Il tuo telefono (opzionale)"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;textarea name="messaggio" rows="5" placeholder="Descrivi la tua richiesta" required&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button type="submit"&gt;Invia richiesta&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/form&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="contatti"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Contatti&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href="mailto:paridavideimpianti@yahoo.it" style="color:#00b4d8;"&gt;paridavideimpianti@yahoo.it&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;&lt;strong&gt;Telefono:&lt;/strong&gt; +39 XXX XXX XXXX&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;&lt;strong&gt;Sede:&lt;/strong&gt; [Inserisci indirizzo aziendale]&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&amp;copy; 2024 Pari Davide – Impianti Elettrici | Tutti i diritti riservati</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Pulsante WhatsApp --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;a href="https://wa.me/39XXXXXXXXX" class="whatsapp-float" target="_blank"&gt;💬&lt;/a&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+  <header>
+    <img src="logo-pari-davide.png" alt="Pari Davide Impianti Elettrici">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#chi-siamo">Chi siamo</a></li>
+        <li><a href="#servizi">Servizi</a></li>
+        <li><a href="#realizzazioni">Realizzazioni</a></li>
+        <li><a href="#preventivo">Preventivo</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Soluzioni Energetiche Innovative</h1>
+    <p>Impianti elettrici e fotovoltaici di qualità per privati e aziende</p>
+    <a href="#preventivo">Richiedi un preventivo</a>
+  </section>
+
+  <section id="chi-siamo">
+    <h2>Chi Siamo</h2>
+    <p>Siamo un'azienda specializzata nella progettazione e installazione di impianti elettrici e fotovoltaici. 
+       L’esperienza e la professionalità di Pari Davide garantiscono soluzioni sicure, efficienti e all’avanguardia per ogni esigenza energetica.</p>
+  </section>
+
+  <section id="servizi">
+    <h2>I Nostri Servizi</h2>
+    <div class="services">
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=60" alt="Impianti elettrici">
+        <h3>Impianti Elettrici Civili e Industriali</h3>
+        <p>Realizziamo impianti su misura per abitazioni, aziende e strutture industriali.</p>
+      </div>
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=60" alt="Fotovoltaico">
+        <h3>Impianti Fotovoltaici</h3>
+        <p>Soluzioni sostenibili per la produzione di energia pulita, riducendo i costi e l’impatto ambientale.</p>
+      </div>
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=60" alt="Manutenzione">
+        <h3>Manutenzione e Assistenza</h3>
+        <p>Servizio di manutenzione costante per mantenere alta l’efficienza e la sicurezza degli impianti.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="preventivo">
+    <h2>Richiedi un Preventivo</h2>
+    <form action="mailto:paridavideimpianti@yahoo.it" method="post" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Il tuo nome" required>
+      <input type="email" name="email" placeholder="La tua email" required>
+      <input type="tel" name="telefono" placeholder="Il tuo telefono (opzionale)">
+      <textarea name="messaggio" rows="5" placeholder="Descrivi la tua richiesta" required></textarea>
+      <button type="submit">Invia richiesta</button>
+    </form>
+  </section>
+
+  <section id="contatti">
+    <h2>Contatti</h2>
+    <p><strong>Email:</strong> <a href="mailto:paridavideimpianti@yahoo.it" style="color:#00b4d8;">paridavideimpianti@yahoo.it</a></p>
+    <p><strong>Telefono:</strong> +39 XXX XXX XXXX</p>
+    <p><strong>Sede:</strong> [Inserisci indirizzo aziendale]</p>
+  </section>
+
+  <footer>
+    &copy; 2024 Pari Davide – Impianti Elettrici | Tutti i diritti riservati
+  </footer>
+
+  <!-- Pulsante WhatsApp -->
+  <a href="https://wa.me/39XXXXXXXXX" class="whatsapp-float" target="_blank">💬</a>
+
 </body>
 </html>
